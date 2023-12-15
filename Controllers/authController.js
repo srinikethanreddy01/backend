@@ -10,6 +10,7 @@ const test=(req,res)=>{
 const register=async (req,res)=>{
     try{
         const{name,email,password}=req.body;
+        console.log("register")
         if(!name){
             return res.json({
                 error:'name is required'
@@ -48,7 +49,7 @@ const login=async (req,res)=>{
     try {
         
         const {email,password}=req.body;
-        console.log(email)
+        console.log("world");
         const user=await User.findOne({email});
         if(!user){
             return res.json({
