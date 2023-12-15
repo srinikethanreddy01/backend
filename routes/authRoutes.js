@@ -10,8 +10,9 @@ const {login} =require("../Controllers/authController")
 
 router.use(
     cors({
-        credentials:true,
-        origin:'https://frontend-c1ep.onrender.com'
+        origin:'https://frontend-c1ep.onrender.com',
+        credentials:true
+        
     })
 )
 
